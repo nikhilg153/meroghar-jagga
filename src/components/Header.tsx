@@ -29,27 +29,27 @@ const items = [
 
 const Header = () => {
   return (
-    <Flex align="center" justify="between">
+    <div className="flex items-center justify-between">
       <Image src={Logo} alt="Logo" />
       <Flex>
         {items.map((item) => {
           const Icon = item.icon;
           return (
-            <Flex align="center" key={item.id} className="gap-5 mr-4">
+            <div key={item.id} className="flex items-center gap-5 px-4">
               <Icon className="h-8 w-8 text-green-900" />
               <Flex direction="column">
-                <Text size="1" weight="bold" className="text-green-900">
+                <Text weight="bold" className="text-green-900">
                   {item.title}
                 </Text>
                 <Text weight="light" className="text-green-900">
                   {item.details}
                 </Text>
               </Flex>
-            </Flex>
+            </div>
           );
         })}
       </Flex>
-    </Flex>
+    </div>
   );
 };
 

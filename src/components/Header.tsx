@@ -29,7 +29,7 @@ const items = [
 
 const Header = () => {
   return (
-    <div className="flex items-center justify-between">
+    <div className="flex items-center justify-between px-56">
       <Image src={Logo} alt="Logo" />
       <Flex>
         {items.map((item) => {

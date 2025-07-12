@@ -29,7 +29,7 @@ const navItems = [
 
 const Navbar = () => {
   return (
-    <div className="bg-green-900 px-56 my-5 text-white">
+    <div className="bg-green-900 px-56 mt-5 text-white">
       <div className="flex items-center justify-between">
         <div className="flex">
           {navItems.map((item) => (

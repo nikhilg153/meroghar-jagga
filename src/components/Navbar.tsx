@@ -34,14 +34,14 @@ const Navbar = () => {
         <div className="flex">
           {navItems.map((item) => (
             <Text
-              className="border-green-800 border-1 p-4 cursor-pointer hover:bg-green-800 hover:text-green-500 font-bold"
+              className="border-green-800 border-1 p-4 cursor-pointer hover:bg-green-800 hover:text-green-500 font-semibold"
               key={item.id}
             >
               {item.title}
             </Text>
           ))}
         </div>
-        <div className="flex gap-4 font-bold">
+        <div className="flex gap-4 font-semibold">
           <Text className="cursor-pointer hover:text-green-500">Login</Text>
           <Text className="cursor-pointer hover:text-green-500">Register</Text>
           <Text className="cursor-pointer hover:text-green-500">
